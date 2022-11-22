@@ -14,7 +14,6 @@ export default function Sample({ timerecords }: Props) {
       </h1>
 
       {timerecords.map(timerecord => (
-
         <div key={timerecord.id} className="container mx-auto p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           <div className="rounded overflow-hidden shadow-lg">
             <div className="px-6 pt-4 pb-2">
@@ -31,7 +30,7 @@ export default function Sample({ timerecords }: Props) {
           </div>
         </div>
         <p>出勤時間　{timerecord.inTime}</p>
-        <p>退勤時間　{timerecord.inTime}</p>
+        <p>退勤時間　{timerecord.outTime}</p>
 
       </div>
         ))}
